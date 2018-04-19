@@ -11,10 +11,11 @@ por Layla Comparin
 # Self - Remete a tudo que for da classe Cachorro. (Init é um método - construtor.)
 
 class Cachorro:
-  def __init__(self, n, i, r):  
+  def __init__(self, n, d, r):  
       self.nome = n
-      self.idade = i
+      self.datanasc = d
       self.raca = r
+      self.temOsso = False
       
   def latir(self):
       print("Au, Au!")
@@ -26,6 +27,6 @@ class Cachorro:
           print("Estou deitado. Au! Au!")
       if(acao == "Pula!"):
           print("Estou pulando.. ")
-      if(acao == "Fiz Aniversário!"):
-          self.idade += 1
-          print('Agora eu tenho ' + str(self.idade) + ' anos!')
+
+
+
