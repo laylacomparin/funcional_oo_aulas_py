@@ -1,13 +1,12 @@
 """
 CENTRO UNIVERSITÁRIO METODISTA IZABELA HENDRIX
 PROGRAMAÇÃO FUNCIONAL ORIENTADA A OBJETOS PYTHON
-Aula 02
+Aula 03
 por Layla Comparin
-
 """
 
 # Atributo são nome, idade, raça...
-# Método são as funções. 
+# Método são as funções em negrito. 
 # Self - Remete a tudo que for da classe Cachorro. (Init é um método - construtor.)
 
 class Cachorro:
@@ -27,6 +26,17 @@ class Cachorro:
           print("Estou deitado. Au! Au!")
       if(acao == "Pula!"):
           print("Estou pulando.. ")
+          
+  def pegaOsso(self):
+      if self.temOsso:
+          print("Já tenho osso!")
+      else:
+          self.temOsso = True
+          print("Humm.. Que osso gostoso!")
 
-
-
+  def largaOsso(self):
+      if self.temOsso:
+         self.temOsso = False
+         print("Larguei o osso!")
+      else:
+         print("Osso? Onde??")
