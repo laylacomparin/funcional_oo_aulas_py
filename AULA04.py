@@ -79,6 +79,8 @@ pnad['V4720'].describe()
 
 print(renda)
 
+#Testes aleatórios:
+
 renda = float(renda)
 
 renda = pnad['V4720'].astype(float)
